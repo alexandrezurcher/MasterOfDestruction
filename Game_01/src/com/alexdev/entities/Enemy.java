@@ -20,7 +20,7 @@ public class Enemy extends Entity {
 	
 	private BufferedImage [] sprites;
 	
-	private int life = 5;
+	private int life = 3;
 	
 	private boolean isDamaged = false;
 	private int damageFrames = 10, damageCurrent = 0;

@@ -42,6 +42,9 @@ public class Sound {
 	public static Clips music = load("/MiguelMusic.wav",1);
 	public static Clips hurtEffect = load("/hurt.wav",1);
 	public static Clips shoot = load("/shoot.wav",1);
+	public static Clips lifePack = load("/lifePack.wav",1);
+	public static Clips gun = load("/gun.wav",1);
+	public static Clips bullets = load("/bullets.wav",1);
 	
 	private static Clips load(String name, int count) {
 		try {

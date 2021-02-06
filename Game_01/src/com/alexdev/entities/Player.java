@@ -169,6 +169,7 @@ public class Player extends Entity {
 			if( e instanceof Weapon) {
 				if(Entity.isColidding(this, e)) {
 					arma = true;
+					Sound.gun.play();
 					System.out.println("Pegou a arma");
 					Game.entities.remove(e);
 				
@@ -183,6 +184,7 @@ public class Player extends Entity {
 			if( e instanceof Bullet) {
 				if(Entity.isColidding(this, e)) {
 					ammo+=10;
+					Sound.bullets.play();
 					//System.out.println("Municao atual " + ammo);
 					Game.entities.remove(e);
 				
@@ -198,6 +200,7 @@ public class Player extends Entity {
 			Entity e = Game.entities.get(i);
 			if( e instanceof LifePack) {
 				if(Entity.isColidding(this, e)) {
+					Sound.lifePack.play();
 					life+=10;
 					//Game.entities.remove(e);
 					if(life >=100)
